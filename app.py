@@ -500,8 +500,7 @@ def main():
             <div class="scenario-text">
                 <strong>상황:</strong> 새로운 금융사와 제휴를 맺었습니다. 금감원에 공시된 상품 정보를 가져와서 DB에 등록합니다.<br>
                 <strong>할 일:</strong> 금감원 API 조회 → DB 등록<br>
-                <strong>유의점:</strong> 상품코드가 은행마다 같을 수 있어 (금융회사코드 + 상품코드) 복합 유니크 처리 
-            </div>
+                <strong>유의점:</strong> 상품코드가 은행마다 같을 수 있고, 대출 유형별로도 중복될 수 있어 (금융회사코드 + 상품코드 + 대출유형) 복합 유니크 처리
         </div>
         """, unsafe_allow_html=True)
         
